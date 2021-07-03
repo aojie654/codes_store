@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>02_display_inline-block</title>
+  <style media="screen">
+    body {
+      font-size: 0px;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      font-size: 50px;
+      position: center;
+      /*
+        display 属性为inline-block我们称之为内联级元素
+        1.支持所有的css样式设置，左右margin会进行相加;
+        2.可以同行排列
+        3.文档中的回车符在浏览其中会被解析成一个默认间隙，对于不同的浏览器大小不同;
+          解决办法
+           1).改变body中font-size为0;
+           2).改变文档结构(不推荐);
+        4.默认情况下两个inlineblock块是在垂直方向上按照盒子基线(内容文字底部)进行对齐。
+          因此当内容文字行数不同时，默认情况下会导致垂直方向不对齐。
+          解决办法：
+           对所有盒子vertical-align属性为相同的绯闻子底部的值，常用方式为middle盒子中心线进行对齐;
+        5.宽高在不设置的时候由内容撑开
+        6.行级标签(inline & inline-block)在水平居中，是靠父级设置text-align:center;
+          块级标签(block)时给该标签设置margin: 上下 auto;
+      */
+    }
+
+    .box1 {
+      background: red;
+    }
+
+    .box2 {
+      background: green;
+      display: block;
+      margin: auto;
+      border: 1px solid #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+
+</html>

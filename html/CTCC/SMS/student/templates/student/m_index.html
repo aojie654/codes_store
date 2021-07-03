@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="{% static 'student/images/icon.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'student/css/m_index.css' %}">
+    <title>学生管理系统</title>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="logo">
+        <img class="wrap_logo" src="{% static 'student/images/logo.png' %}" alt="Logo">
+    </div>
+</div>
+
+<div class="body">
+    <div class="choice_div">
+        <ul class="choice_ul">
+            <li class="choice_li">
+                <a href="/student/">学生登录</a></li>
+            <li class="choice_li">
+                <a href="/admin/">管理员登录</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <p class="footer_copyright">©2018 All Rights Reserved.</p>
+</div>
+</body>
+</html>

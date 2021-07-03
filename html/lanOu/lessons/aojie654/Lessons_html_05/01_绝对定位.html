@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>01_绝对定位</title>
+  <style media="screen">
+    .box {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #ff0000;
+      margin: 0px auto;
+      position: relative;
+    }
+
+    .box1 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid green;
+      background: #0000ff;
+      position: absolute;
+      /*绝对定位 absolute*/
+      left: 0px;
+      bottom: 0px;
+      /*设置了绝对定位的盒子，将具有易下特点：
+      1.脱离了原来的文本流，将进入新的一层
+      2.可以按照某一个父级进行定位操作
+      3.定位父级的选择：在文档结构上距离该盒子最近且位置属性为非默认文本流(static)的父级作为定位父级
+      4.绝对定位的盒子：宽度，高度在按百分比进行变化时，是以其定位父级为基准的，与直接父级无关
+      5.常用场景：
+          图片之上叠加文字，与鼠标行为相配合(hover),实现列表菜定位，游戏界面
+      6.绝对定位完全脱离原来文本在指定区域内自由设置位置;
+      */
+    }
+
+    .box2 {
+      width: 400px;
+      height: 400px;
+      border: 1px solid #008000;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box2">
+      <div class="box1">
+        <div>
+        </div>
+      </div>
+</body>
+
+</html>

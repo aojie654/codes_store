@@ -1,0 +1,79 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    list-style: none;
+    font-family: Microsoft Yahei;
+}
+
+.reg {
+    width: 620px;
+    text-align: center;
+}
+
+.reg::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.reg_top_title {}
+
+.norequired {
+    margin-right: 12px;
+}
+
+.reg_left,
+.reg_right {
+    width: 50%;
+    float: left;
+}
+
+.reg_right {
+    float: right;
+}
+
+.reg_int {
+    height: 30px;
+    text-align: right;
+}
+
+label {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.reg_int_sex {
+    margin-right: 106px;
+}
+
+.reg_int_province {
+    margin-right: 118px;
+}
+
+
+.reg_int_birthdate_year {
+    width: 63px;
+    margin-right: 0px;
+}
+
+.high {
+    color: red;
+}
+
+.msg {
+    font-size: 13px;
+}
+
+.onError {
+    color: red;
+}
+
+.onSuccess {
+    color: green;
+}
+
+cRed {
+    color: rgba(255, 0, 0, 1);
+}

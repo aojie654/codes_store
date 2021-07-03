@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>02_浮动停止问题</title>
+  <style media="screen">
+    div {
+      border: 1px solid transparent;
+    }
+
+    .box {
+      width: 600px;
+      /*height: 404px;*/
+      margin: auto auto;
+    }
+
+    .box div {
+      float: left;
+      border-radius: 10px;
+    }
+
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background: red;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background: green;
+    }
+
+    .box3 {
+      width: 200px;
+      height: 200px;
+      background: blue;
+    }
+
+    .box4 {
+      width: 200px;
+      height: 200px;
+      background: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+      <div class="box3" style="border-radius:100px"></div>
+  
+   <!-- 浮动块停止问题
+ 浮动块按照设置的方向一直移动，直到遇到父级框的边缘或者其他浮动块的边缘停止;
+ 其他浮动快的边缘包括margin在内;
+ 一般发现浮动失效，一定是浮动块正上方浮动块相邻的元素出现高度过高问题：
+1.自身高度比其他元素高;
+2.该院素本身没有浮动，但其内部有子级发生浮动，并且浮动后包括margin在内的选绕高度超过了父级高度;
+  项目中遇到比较多的问题时图片宽高比例不一致，导致的图片高度不同， 进而引发浮动阻挡 -->
+  </div>
+</body>
+
+</html>

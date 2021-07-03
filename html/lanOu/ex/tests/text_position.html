@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>test_position</title>
+  <style media="screen">
+    .box {
+      margin: 200px auto;
+      position: relative;
+      width: 200px;
+      height: 200px;
+      z-index: 5;
+    }
+    .box0 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      z-index: 8;
+      background: #ff00ff;
+      transition: 5s;
+    }
+    .box1 {
+      position: absolute;
+      background: #0000ff;
+      left: 50px;
+      top: 50px;
+      z-index: 12;
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+      transition: 3s;
+    }
+
+    .box2 {
+      background: #ff0000;
+      transition: 3s;
+    }
+
+    .box3 {
+      background: #008000;
+      transition: 1s;
+    }
+
+    .box4 {
+      background: #0000ff;
+      transition: 2s;
+    }
+
+    .box5 {
+      background: #ff0000;
+      transition: 3s;
+    }
+
+    .box6 {
+      background: #008000;
+      transition: 1s;
+    }
+
+    .box7 {
+      background: #0000ff;
+      transition: 2s;
+    }
+
+    .box8 {
+      background: #ff0000;
+      transition: 3s;
+    }
+
+    .box9 {
+      background: #008000;
+      transition: 2s;
+    }
+
+    .box10 {
+      background: #0000ff;
+      transition: 3s;
+    }
+
+    .box11 {
+      background: #ff0000;
+      transition: 1s;
+    }
+
+    .box12 {
+      background: #008000;
+      transition: 3s;
+    }
+    .box:hover .box0{
+      opacity: 0;
+    }
+    .box:hover .box1 {
+      opacity: 1;
+      left: -100px;
+      top: -100px;
+    }
+
+    .box:hover .box2 {
+      opacity: 1;
+      left: -0px;
+      top: -100px;
+    }
+
+    .box:hover .box3 {
+      opacity: 1;
+      left: 100px;
+      top: -100px;
+    }
+    .box:hover .box4 {
+      opacity: 1;
+      left: 200px;
+      top: -100px;
+    }
+
+    .box:hover .box5 {
+      opacity: 1;
+      left: 200px;
+      top: 0px;
+    }
+
+    .box:hover .box6 {
+      opacity: 1;
+      left: 200px;
+      top: 100px;
+    }
+    .box:hover .box7 {
+      opacity: 1;
+      left: 200px;
+      top: 200px;
+    }
+
+    .box:hover .box8 {
+      opacity: 1;
+      left: 100px;
+      top: 200px;
+    }
+
+    .box:hover .box9 {
+      opacity: 1;
+      left: 0px;
+      top: 200px;
+    }
+      .box:hover .box10 {
+        opacity: 1;
+        left: -100px;
+        top: 200px;
+      }
+
+      .box:hover .box11 {
+        opacity: 1;
+        left: -100px;
+        top: 100px;
+      }
+
+      .box:hover .box12 {
+        opacity: 1;
+        left: -100px;
+        top: 00px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box0">0</div>
+    <div class="box1">1</div>
+    <div class="box1 box2">2</div>
+    <div class="box1 box3">3</div>
+    <div class="box1 box4">4</div>
+    <div class="box1 box5">5</div>
+    <div class="box1 box6">6</div>
+    <div class="box1 box7">7</div>
+    <div class="box1 box8">8</div>
+    <div class="box1 box9">9</div>
+    <div class="box1 box10">10</div>
+    <div class="box1 box11">11</div>
+    <div class="box1 box12">12</div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+}
+
+.welcome {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.welcome_name {
+    color: rgba(255, 100, 90, 1);
+    display: inline-block;
+    font-weight: bold;
+}
+
+.no_wrap {
+    margin: 50px auto;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.name {
+    font-size: 32px;
+}
+
+.type_ti, .type, .no_ti, .no {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.type {
+    margin-right: 40px;
+}
+
+.time {
+    font-size: 14px;
+}
+
+.content {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    text-align: left;
+    margin-top: 20px;
+}

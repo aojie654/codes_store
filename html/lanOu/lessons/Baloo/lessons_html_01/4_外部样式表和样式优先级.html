@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>外部样式表和样式优先级</title>
+    <style media="screen">
+      #dw{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .xw{
+        background-color: blue;
+      }
+      div{
+        background-color: green;
+      }
+    </style>
+    <!-- 引入外部样式表 -->
+    <!-- <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8"> -->
+  </head>
+  <body>
+    <div class="xw" id="dw" style="background-color:black"></div>
+    <!--
+      样式的引入方式：
+      1、行间样式：优先级最高，代码不方便维护，
+      产生大量的代码冗余，不推荐使用
+      2、内部样式表：写在html文档中<style></style>
+      在样式表中使用选择器选中标签设置样式
+      三大基本选择器：id > class > 标签选择器
+      如果选择器优先级相同，在样式表中位置靠后的
+      会叠加位置靠前的选择器样式
+      3、外部样式表：在.css文件中使用选择器选中
+      标签设置样式，开发中最常用的方式，便于代码
+      的维护
+
+
+
+
+
+   -->
+
+
+  </body>
+</html>

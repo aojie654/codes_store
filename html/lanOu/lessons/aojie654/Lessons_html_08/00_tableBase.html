@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>01_tableBase_01</title>
+  <style media="screen">
+    td{
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 表格基本完整结构：table内有3个子级，
+          thead:语义化标签，用来表示表头内容
+         tbody:语义化标签，用来表示表格主题内容;
+         tfoot:语义化标签，用来表示表尾部分;
+         tr:分割表格中的每一行;
+         th:表示每行中的表格单元格个数,表头单元
+         td:表示每行中的表格单元格个数，表格数据单元
+          -->
+  <!-- 最外层 -->
+  <table>
+    <!-- 表头 -->
+    <thead>
+      <!-- 描述一行 Table Row-->
+      <tr>
+        <!-- 表头表格 table head -->
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+      </tr>
+    </thead>
+    <!-- 表身 -->
+    <tbody>
+      <!-- Table Data -->
+      <tr>
+        <td>11</td>
+        <td>21</td>
+        <td>31</td>
+        <td>41</td>
+        <td>51</td>
+      </tr>
+    </tbody>
+    <!-- 表尾 -->
+    <tfoot>
+      <tr>
+        <td>111</td>
+        <td>211</td>
+        <td>311</td>
+        <td>411</td>
+        <td>511</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

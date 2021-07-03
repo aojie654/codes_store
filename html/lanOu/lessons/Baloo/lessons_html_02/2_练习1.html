@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 150px;
+        padding: 5px;
+        border: 1px solid rgb(166,166,166);
+        background: rgb(244,244,244);
+      }
+      /*子代选择器: 父级选择器 子级选择器{样式}*/
+      .box div{
+        text-indent: 1em;
+        /*line-height: 50px;*/
+        padding: 5px 0;
+      }
+      .bg1{
+        background: url('img/con1_bg1.png') right center no-repeat;
+      }
+      .bg2{
+        background: url('img/con1_bg2.png') left center no-repeat;
+      }
+      .bg3{
+        background: url('img/con2_bg1.png') left center no-repeat;
+      }
+      .bg{
+        background: rgb(41,131,254);
+        color: white;
+      }
+      .border{
+        border-bottom: 1px solid rgb(166,166,166);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- 外层大框 -->
+    <div class="box">
+      <div class="bg1">工具栏</div>
+      <div class="bg2">状态栏</div>
+      <div class="bg1 border">浏览器栏</div>
+      <div class="bg3">缩略图</div>
+      <div>平铺</div>
+      <div class="bg">图标</div>
+      <div>列表</div>
+      <div class="border">详细信息</div>
+      <div class="bg1 border">排列图标</div>
+      <div>选择详细信息</div>
+      <div class="border">自定义文件夹</div>
+      <div class="bg1">转到</div>
+      <div>刷新</div>
+    </div>
+
+  </body>
+</html>

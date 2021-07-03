@@ -1,0 +1,61 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	color: rgba(0, 0, 0, 1);
+	text-decoration: none;
+	list-style: none;
+	font-family: Microsoft Yahei;
+}
+
+.zhuce {
+	width: 620px;
+	text-align: center;
+}
+
+.zhuce::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.feibitian {
+	margin-right: 12px;
+}
+
+.zuo {
+	width: 50%;
+	float: left;
+}
+
+.you {
+	width: 50%;
+	float: left;
+	float: right;
+}
+
+.neirong {
+	height: 30px;
+	text-align: right;
+}
+
+biaoqian {
+	width: 200px;
+	margin-left: 20px;
+}
+
+.xingbie {
+	margin-right: 105px;
+}
+
+.shengshi {
+	margin-right: 117px;
+}
+
+.chushengriqinianfen {
+	width: 63px;
+	margin-right: 0px;
+}
+
+xinghao {
+	color: rgba(255, 0, 0, 1);
+}

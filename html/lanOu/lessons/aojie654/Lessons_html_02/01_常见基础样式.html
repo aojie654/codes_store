@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>01_常见基础样式</title>
+    <style media="screen">
+      .box{
+        width: 200px;
+        height: 200px;
+        background: #00ff33;
+        background-image: url('img/tmp2.png');
+        /*背景图属性*/
+        background-repeat: no-repeat;
+        /*背景图重复*/
+        background-position: 100px 50px;
+        /*背景图定位属性*/
+        background: #00ff33 ;
+        /*
+          简写属性顺序：背景色，背景图，定位，背景图平铺。
+          简写属性可以设置任何一个分立属性，没有设置值的属性都会设置为默认值;
+          Eg.backgroud:red;一样可以设置北京为红色，同时将背景图置空，定位左上角，平铺;
+        */
+
+        /*字体相关样式*/
+        color: rgb(255, 255, 255);
+        /*字体颜色,红绿蓝三原色，取值0-255*/
+        font-size: 12px;
+        /*字体大小，默认字体大小为16*/
+        font-style: italic;
+        /*字体样式*/
+        text-decoration:underline;
+        /*下划线*/
+        font-weight: bold;
+        /*字重*/
+        font-family: STyouyuan;
+        /*字体; monospace，即等宽;
+        中文字体需要加ST,eg. STkaiti*/
+        text-align: center;
+        /*文字位置*/
+        text-indent: 24px;
+        /*文字缩进*/
+        letter-spacing: normal;
+        /*字符间距*/
+        word-spacing: 5px;
+        /*词间距*/
+        white-space: nowrap;
+        /*强制不换行*/
+      }
+    </style>
+  </head>
+  <body>
+      <div class="box">
+          I'M div;
+      </div>
+  </body>
+</html>

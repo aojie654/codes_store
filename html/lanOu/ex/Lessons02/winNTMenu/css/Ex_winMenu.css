@@ -1,0 +1,44 @@
+.main{
+  width: 150px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #7b7b7b;
+  font-family: MSyahei;
+  padding: 0px 5px 0px 5px;
+  border: 2px solid #9da5b4;
+  border-right-color: #282a34;
+  border-bottom-color: #282a34;
+}
+
+.onSlide{
+  background-color: #1c78ff;
+}
+
+.main div{
+  padding:3px 0px 3px 20px;
+}
+
+.able{
+  color:#000000;
+}
+
+.more{
+  background: url('../img/more.png') center right no-repeat;
+}
+
+.onSlide{
+  background-color: #1c78ff;
+}
+
+
+.line{
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.chooseSingle{
+  background: url('../img/choose_s.png') center left no-repeat;
+}
+
+.chooseMore{
+  background: url('../img/choose_m.png') center left no-repeat;
+}

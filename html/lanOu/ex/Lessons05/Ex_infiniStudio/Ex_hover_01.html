@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ex_hover_01</title>
+    <style media="screen">
+      .wrap{
+        width:500px;
+        position: relative;
+      }
+      .wrap:hover .mask{
+        opacity: 0.5;
+      }
+      .wrap:hover h4{
+        opacity: 1;
+      }
+      .image img{
+        width: 100%;
+      }
+      .mask{
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 8;
+        transition: 1s;
+      }
+      .wrap h4{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        position: absolute;
+        top: 20%;
+        left: 0px;
+        z-index: 10;
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="image">
+        <img src="./img/lxz.jpg" alt="LXZ">
+      </div>
+      <div class="mask"></div>
+      <h4>LXZ</h4>
+    </div>
+  </body>
+</html>

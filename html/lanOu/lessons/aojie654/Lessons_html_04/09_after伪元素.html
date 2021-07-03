@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>09_after伪元素</title>
+    <style media="screen">
+    .box1{
+
+      }
+    .box::after{
+      /*描述标签的内容*/
+      content:"哈哈2";
+      background: yellow;
+      width: 50px;
+      height: 50px;
+      display: block;
+    }
+    span{
+      background: red;
+    }
+    /*
+    .box::after:表示在.box内部最后一个子级位置上添加一个标签，对该标签设置样式;
+    */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span>哈哈</span>
+    </div>
+  </body>
+</html>

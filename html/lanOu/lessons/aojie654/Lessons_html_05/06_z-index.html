@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>06_z-index</title>
+    <style media="screen">
+    .box01, .box02{
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ff0000;
+      position: relative;
+    }
+    .box1{
+      width: 100px;
+      height: 100px;
+      background:  #ff0000;
+      position: absolute;
+      left: 200px;
+      top: 150px;
+      z-index: 10px;
+    }
+    .box2{
+      width: 100px;
+      height: 100px;
+      background: #0000ff;
+      position: absolute;
+      left: 200px;
+      top: -52px;
+      z-index: 1px;
+    }
+  </style>
+  </head>
+  <body>
+  <div class="box01">
+    <div class="box1">box1</div>
+  </div>
+  <div class="box02">
+    <div class="box2">box2</div>
+  </div>
+  </body>
+  <!-- z-index:
+          1.主要用来设置非默认文本流位置属性的盒子，以改变他们之间的叠加先后顺序;
+          2.普通情况：值越大，显示越靠上。
+            特殊情况：当在不同父级下的非默认文本流的盒子，在比较时，如果他们的父级已经有了明确的值设置，
+                    那么子级的设置将会失效
+          3.position:
+              absolute,relative,fixed默认的优先级都比static高，z-index设置无效，但是为了安全操作，
+              在完成定位后要给哥哥盒子一个明确的z-index;
+ -->
+</html>

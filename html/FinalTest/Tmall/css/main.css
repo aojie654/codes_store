@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    list-style: none;
+    font-family: Microsoft Yahei;
+}
+
+.wrap {
+    width: 422px;
+}
+
+.wrap {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.top {
+    font-size: 13px;
+}
+
+.top_left {
+    float: left;
+}
+
+.top_right {
+    float: right;
+    height: 18px;
+    overflow: hidden;
+}
+
+.top_right_ul {
+    position: relative;
+    overflow: hidden;
+}
+
+.center_slideShow {
+    width: 100%;
+    height: 141px;
+    /*其实就是图片的高度*/
+    border: 1px #eeeeee solid;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.center_slideShow_ul {
+    width: 2000px;
+    position: relative;
+}
+
+.center_slideShow_li {
+    float: left;
+    /*让四张图片左浮动，形成并排的横着布局，方便点击按钮时的左移动*/
+    width: 442px;
+}
+
+center_slideShow_li a img {
+    width: 141px;
+}
+
+.center_slideShow_pagination {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    text-align: center;
+    font-size: 8px;
+    line-height: 15px;
+}
+
+.center_slideShow_pagination span {
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background: #ff5a28;
+    margin-left: 2px;
+    color: #fff;
+}
+
+.active {
+    background: #b63e1a;
+}
+
+.bottom {
+    background: rgba(246, 246, 246, 1);
+    font-size: 0px;
+    position: relative;
+    bottom: 102px;
+    width: 100%;
+}
+
+.bottom_logo {
+    width: 15%;
+    height: 40px;
+    margin-left: 6px;
+}

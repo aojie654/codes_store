@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>08_sprite(精灵图)</title>
+  <style media="screen">
+    div {
+      background-image: url('./img/sprite.png');
+      background-repeat: no-repeat;
+    }
+
+    .box1 {
+      width: 107px;
+      height: 27px;
+      background-position: 0px 0px;
+    }
+
+    .box2 {
+      width: 112px;
+      height: 27px;
+      background-position: -129px 0px;
+    }
+
+    .box3 {
+      width: 117px;
+      height: 27px;
+      background-position: -259px 0px;
+    }
+
+    .box4 {
+      width: 242px;
+      height: 21px;
+      background-position: -405px 0px;
+    }
+
+    .box5 {
+      width: 31px;
+      height: 31px;
+      background-position: -0px -215px;
+    }
+
+    .box6 {
+      width: 45px;
+      height: 45px;
+      background-position: -72px -215px;
+    }
+
+    .box7 {
+      width: 45px;
+      height: 45px;
+      background-position: -143px -215px;
+    }
+
+    .box8 {
+      width: 187px;
+      height: 187px;
+      background-position: -320px -70px;
+    }
+
+    .box9 {
+      width: 25px;
+      height: 15px;
+      background-position: -575px -70px;
+    }
+
+    .box10 {
+      width: 68px;
+      height: 118px;
+      background-position: -630px -70px;
+    }
+
+    .box11 {
+      width: 15px;
+      height: 15px;
+      background-position: -0px -288px;
+    }
+
+    .box12 {
+      width: 15px;
+      height: 15px;
+      background-position: -35px -288px;
+    }
+
+    .box13 {
+      width: 12px;
+      height: 15px;
+      background-position: -70px -288px;
+    }
+
+    .box14 {
+      width: 11px;
+      height: 11px;
+      background-position: -107px -288px;
+    }
+
+    .box15 {
+      width: 120px;
+      height: 40px;
+      background-position: -0px -360px;
+    }
+
+    .box16 {
+      width: 120px;
+      height: 40px;
+      background-position: -143px -360px;
+    }
+
+    .box17 {
+      width: 120px;
+      height: 40px;
+      background-position: -287px -360px;
+    }
+
+    .box18 {
+      width: 120px;
+      height: 40px;
+      background-position: -432px -360px;
+    }
+
+    .box19 {
+      width: 336px;
+      height: 36px;
+      background-position: -0px -431px;
+    }
+
+    .box20 {
+      width: 336px;
+      height: 36px;
+      background-position: -359px -431px;
+    }
+
+    .box21 {
+      width: 40px;
+      height: 40px;
+      background-position: -432px -360px;
+      float: left;
+    }
+
+    .box22 {
+      width: 40px;
+      height: 40px;
+      background-position: -472px -360px;
+      background-repeat: repeat-x;
+      float: left;
+    }
+
+    .box23 {
+      width: 40px;
+      height: 40px;
+      background-position: -512px -360px;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+  <div class="box5"></div>
+  <div class="box6"></div>
+  <div class="box7"></div>
+  <div class="box8"></div>
+  <div class="box9"></div>
+  <div class="box10"></div>
+  <div class="box11"></div>
+  <div class="box12"></div>
+  <div class="box13"></div>
+  <div class="box14"></div>
+  <div class="box15"></div>
+  <div class="box16"></div>
+  <div class="box17"></div>
+  <div class="box18"></div>
+  <div class="box19"></div>
+  <div class="box20"></div>
+  <div class="long">
+    <div class="box21"></div>
+    <div class="box22"></div>
+    <div class="box23"></div>
+  </div>
+</body>
+<!--
+      精灵图：
+         又称雪碧图。主要思想是将多张页面中固定不变的图片，整合到一张图片上，
+         变多次请求为一次请求，从而加快页面的加载速度;
+         精灵图在下载到本地计算机后，通过背景图定位属性，将图片的不同区域显示在可视窗口内。完成图片的加载使用;
+      -->
+
+</html>

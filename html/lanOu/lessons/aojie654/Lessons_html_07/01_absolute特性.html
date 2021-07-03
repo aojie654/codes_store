@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>01_absolute</title>
+    <style media="screen">
+      .box{
+        /*width: 100%;*/
+        border: 5px solid #000000;
+        /*float: left;*/
+      }
+      .box::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .box1{
+        width: 100px;
+        height: 100px;
+        background: #ff0000;
+      }
+      .box2{
+        width: 100px;
+        height: 100px;
+        background: #008000;
+      }
+      .box1, .box2{
+        float: left;
+      }
+      .mask{
+        padding:20px;
+      }
+      .title{
+        padding: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+  </body>
+</html>

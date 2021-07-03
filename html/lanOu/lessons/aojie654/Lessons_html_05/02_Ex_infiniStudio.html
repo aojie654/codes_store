@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ex_infiniStudio</title>
+  <style media="screen">
+    .wrap {
+      width: 200px;
+      position: relative;
+      transition: 1s;
+    }
+
+    .wrap:hover .mask {
+      opacity: 0.5;
+    }
+
+    .wrap:hover  h2 {
+      opacity: 1;
+    }
+
+    .image img {
+      width: 100%;
+      display: block;
+    }
+
+
+    .mask {
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      top: 0px;
+      left: 0px;
+      opacity: 0;
+      transition: 1s;
+      position: absolute;
+      z-index: 8;
+      /*透明度opacity：范围从0-1,0代表完全透明，1代表完全不透明*/
+    }
+
+    .wrap h2 {
+      color: #ffffff;
+      top: 30%;
+      left: 0px;
+      text-align: center;
+      /*border: 1px solid #ff0000;*/
+      width: 100%;
+      z-index: 10;
+      opacity: 0;
+      position: absolute;
+      transition: 1s;
+    /*display: inline-table;
+        width: 100%;
+        height: 24px;
+        hright: 0px;
+        bottom: 0px;
+        margin: auto;*/
+      /*一个盒子能在垂直方向居中，需要将该盒子按照父级盒子绝对定位。
+        设置：margin:auto;
+             left:0;
+             right:0;
+             top:0;
+             bottom:0;
+             display:inline-table(inline-block);*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="image">
+      <img src="./img/tree.png" alt="Tree">
+    </div>
+    <!-- 图片 -->
+    <div class="mask">
+
+    </div>
+    <!-- 遮罩 -->
+    <h2>这是一棵树</h2>
+    <!-- 文字 -->
+  </div>
+</body>
+
+</html>

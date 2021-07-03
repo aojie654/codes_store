@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>02_Table 样式设置</title>
+  <style media="screen">
+  /*表格样式常用设置方式
+      table不设置宽高，靠内容撑开
+      由cell决定本行和本列的大小*/
+    table{
+      /*width: 200px;*/
+      border: 1px solid #ff0000;
+      border-collapse: collapse;
+      text-align: center;
+      transition: 1s;
+      opacity: 1;
+      margin: auto;
+    }
+    /*table居中*/
+    /*table:hover{
+      opacity: 0;
+    }*/
+    /*边框坍塌:两个cell之间的边框只保留一个*/
+    th,td{
+      border: 1px solid #99ee00;
+      height: 30px;
+      /*表格中的内容，在水平方向上使用text-align属性，在垂直方向上分布使用vertical-align;*/
+    }
+    .name{
+      width: 100px;
+    }
+    .html{
+      width: 200px;
+    }
+    .css{
+      width: 300px;
+    }
+    /*
+    tr只是用于行分割，一般不舍值样式，设置无效
+    */
+    /*
+    父级宽度给定的时候，每个td,th会根据内容自动对正行按比例分配;
+    如果设置了某一列，其他列宽度将自动分配;
+    设置某一个cell宽度厚后，这个cell所在列的宽度都会跟着一起变化;因为table要求行列必须对齐
+
+    父级table高度给定时，td,th高度会根据内容对整列按照比例进行分配高度，如果设置了某一行的高度，其他行将自动分配，
+
+    设置某一个cell高度后，那么这个cell所在这一行的高度，会跟着一起变化。
+
+    当父级宽度给定，咱照从左到右的方式设置每个cell宽度;
+    当父级高度给定，按照从上到下的方式设置每个cell的高度;
+
+    给定父级宽高条件下，不设置cell的宽高时，默认是根据th,td的内容，按比例分配每一行，每一列大小;
+    */
+  </style>
+</head>
+
+<body>
+    <table>
+    <tr>
+      <th class="name">姓名</th>
+      <th class="html">HTML</th>
+      <th class="css">CSS</th>
+    </tr>
+    <tr>
+      <td>林鑫泽</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>LXZ</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+</body>
+
+</html>

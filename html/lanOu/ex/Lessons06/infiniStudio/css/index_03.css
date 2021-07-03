@@ -1,0 +1,243 @@
+/********************Style Reset Start*************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid transparent;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Mi Lanting";
+}
+
+
+/********************Style Reset end*************************/
+
+
+/********************Header Start*************************/
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.78);
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.header img {
+  width: 110px;
+}
+
+.nav {}
+
+.nav a {
+  font-weight: lighter;
+  line-height: 25px;
+  color: #999999;
+  margin: 0px 20px;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+
+/********************Header end*************************/
+
+/********************Content Start*************************/
+
+.content {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.scollingContent {
+  margin-top: 140px;
+  width: 100%;
+}
+
+.scollingImage {
+  position: relative;
+  width: 100%;
+  z-index: 8;
+}
+
+.scollingImage img {
+  width: 100%;
+  display: block;
+}
+
+.scollingImage h2 {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-align: center;
+}
+
+.pagination {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0px 40px 0px;
+}
+
+.pagination span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0px 20px;
+  border-radius: 50%;
+  background: #999999;
+}
+
+.pagination span:hover {
+  border: 1px solid #999999;
+  background: #ffffff;
+}
+
+
+/*Scolling End*/
+
+
+/*About Me Start*/
+
+.aboutMe {
+  padding: 10px 0px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.aboutMe p {
+  text-indent: 2em;
+  font-family: "汉仪丫丫体简";
+  color: #666666;
+  line-height: 25px;
+}
+
+
+/*About Me End*/
+
+
+/*Cooperation Logo Start*/
+
+.cooperationLogo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cooperationLogo img {
+  width: 60px;
+  margin: 0px 0.7%;
+}
+
+
+/*Cooperation Logo End*/
+
+
+/*Water Flow Start*/
+
+.waterFlow {}
+
+.waterFlow::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cell {
+  width: 30%;
+  float: left;
+  margin: 10px 0px;
+}
+
+.cellCenter {
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+}
+
+.cell img {
+  width: 100%;
+  display: block;
+}
+
+.cellContent {
+  position: relative;
+  z-index: 8;
+  width: 100%;
+}
+
+.cellMask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 1s;
+  text-align: center;
+}
+
+.cellMaskText {
+  display: inline-table;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 12;
+  margin: auto;
+  color: #ffffff;
+}
+
+.cellContent:hover .cellMask {
+  opacity: 1;
+}
+
+/********************Content end*************************/
+
+
+/********************Footer Start*************************/
+.footer{
+  background: #e0e0e0;
+  padding: 10px 0px;
+}
+.footer::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footerLeft{
+  float: left;
+  width: 49%;
+  padding-right: 0.7%;
+  text-align: right;
+}
+.footerLeft img{
+width: 30px;
+}
+
+.footerRight{
+  float: right;
+  width: 49%;
+  padding-left: 0.7%;
+  border-left: 1px solid #999999;
+}
+
+.footerRight img{
+width: 130px;
+}
+.info{
+  font-size: 14px;
+  color: #666666;
+}
+
+/********************Footer end*************************/

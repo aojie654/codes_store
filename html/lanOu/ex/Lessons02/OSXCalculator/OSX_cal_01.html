@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>OSX_cal_01</title>
+  <style media="screen">
+    .cal {
+      width: 204px;
+      margin: 0px auto;
+    }
+
+    .display {
+      height: 80px;
+      background: #29282e;
+      font-size: 40px;
+      text-align: right;
+      /*padding-top: 30px;*/
+      color: #fff;
+    }
+
+    .operate {
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+      float: left;
+      margin: 2px 2px;
+    }
+
+    .close {
+      background: red;
+    }
+
+    .min {
+      background: yellow;
+    }
+
+    .max {
+      background: green;
+    }
+
+    .intputA {}
+
+    .input {
+      text-align: center;
+      width: 49px;
+      height: 49px;
+      background: #d6d6d6;
+      border: 1px solid #8f8f8f;
+      float: left;
+    }
+
+    div .inputA .zero {
+      width: 100px;
+    }
+
+    div .inputA .operator {
+      background: #f79331;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cal">
+    <div class="operate close"></div>
+    <div class="operate min"></div>
+    <div class="operate max"></div>
+    <div class="display">0.</div>
+    <div class="inputA">
+      <div class="input">AC</div>
+      <div class="input">+/-</div>
+      <div class="input">%</div>
+      <div class="input operator">/</div>
+      <div class="input">7</div>
+      <div class="input">8</div>
+      <div class="input">9</div>
+      <div class="input operator">*</div>
+      <div class="input">4</div>
+      <div class="input">5</div>
+      <div class="input">6</div>
+      <div class="input operator">-</div>
+      <div class="input">1</div>
+      <div class="input">2</div>
+      <div class="input">3</div>
+      <div class="input operator">+</div>
+      <div class="input zero">0</div>
+      <div class="input">.</div>
+      <div class="input operator">=</div>
+    </div>
+  </div>
+</body>
+
+</html>

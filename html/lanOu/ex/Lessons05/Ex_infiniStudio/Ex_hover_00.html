@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ex_hover_00</title>
+    <style media="screen">
+      .wrap{
+        width: 500px;
+        position: relative;
+        /*transition: 1s;*/
+      }
+      .wrap:hover .mask{
+        opacity: 0.5;
+      }
+      .wrap:hover h2{
+        opacity: 1;
+      }
+      .image img{
+        width: 100%;
+      }
+      .mask{
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        z-index: 8;
+      }
+      .wrap h2{
+        font-size: 80px;
+        width: 100%;
+        color: #ffffff;
+        top: 30%;
+        left: 0px;
+        text-align: center;
+        opacity: 0;
+        z-index: 10;
+        position: absolute;
+        transition: 1s;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="image"><img src="./img/lxz.jpg" alt=""></div>
+      <div class="mask"></div>
+      <h2>这是林鑫泽</h2>
+    </div>
+  </body>
+</html>

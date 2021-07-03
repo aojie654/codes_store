@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId"
+	project-version="1.5.0">
+	<wb-module deploy-name="book18study0607">
+		<wb-resource deploy-path="/" source-path="/WebContent"
+			tag="defaultRootSource" />
+		<wb-resource deploy-path="/WEB-INF/classes"
+			source-path="/src" />
+		<wb-resource deploy-path="/WEB-INF/classes/"
+			source-path="/ImportedClasses" />
+		<property name="context-root" value="book18study0607" />
+		<property name="java-output-path"
+			value="/book18study0607/build/classes" />
+	</wb-module>
+</project-modules>

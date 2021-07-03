@@ -1,0 +1,262 @@
+/*****************************Style Reset Start********************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Mi Lanting";
+  border: 1px solid transparent;
+}
+body{
+  background: #f2f2f2;
+}
+
+/*****************************Style Reset end********************************/
+
+
+/*****************************Header Start********************************/
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.78);
+  text-align: center;
+}
+
+.header img {
+  width: 110px;
+}
+
+.nav {
+  padding: 10px 0px;
+}
+
+.nav a {
+  font-family: "Devil Breeze";
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+
+/*****************************Header end********************************/
+
+
+/*****************************content Start********************************/
+
+.content {
+  width: 94%;
+  margin: 0px auto;
+  margin-top: 140px;
+}
+
+
+/*Scorlling image start*/
+
+.image {
+  position: relative;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 8;
+}
+
+.image h2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  /*opacity: 1;*/
+}
+
+.pagination {
+  text-align: center;
+  width: 100%;
+  font-size: 0px;
+  padding: 10px 0px 40px 0px;
+}
+
+.pagination span {
+  width: 6px;
+  height: 6px;
+  background: #606060;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.pagination span:hover {
+  background: #ffffff;
+  border: 1px solid #606060;
+}
+
+
+/*Scorlling image end*/
+
+
+/*About Me  start*/
+
+.aboutMe {
+  font-size: 14px;
+  color: #999999;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  text-indent: 2em;
+  line-height: 25px;
+  padding: 10px 0px;
+}
+
+
+/*About Me end*/
+
+
+/*Cooperation Logo  start*/
+
+.cooperationLogo {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.cooperationLogo img {
+  width: 60px;
+  margin: 0px 0.87%;
+}
+
+
+/*Cooperation Logo  end*/
+
+
+/*WaterFlow  start*/
+
+.waterFlow {
+  width: 100%;
+}
+
+.waterFlow::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cell {
+  float: left;
+  width: 30%;
+  text-align: center;
+  background: #ffffff;
+}
+.cellCenter{
+  margin: 0px 4.5%;
+}
+
+.cell img {
+  width: 100%;
+}
+
+.cellContent {
+  position: relative;
+  font-size: 0px;
+}
+
+.cellMask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition:1s;
+}
+
+.cellMaskText {
+  width: 100%;
+  display: inline-table;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  margin: auto;
+  color: #ffffff;
+}
+.cellMaskText h3, .cellMaskText p{
+  font-family: "Mi Lanting";
+}
+.cellMaskText h3{
+  font-size: 20px;
+}
+.cellMaskText p{
+  font-size: 15px;
+}
+.cellContent:hover .cellMask{
+  opacity: 1;
+}
+
+
+/*WaterFlow end*/
+
+
+/*****************************content end********************************/
+
+
+/*****************************footer Start********************************/
+
+.footer{
+background: #909090;
+margin-top: 40px;
+padding:20px 0px;
+}
+.footer::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.footerLeft, .footerRight{
+  float: left;
+  width: 49%;
+}
+/*Footer Left  start*/
+.footerLeft{
+text-align: right;
+}
+.footerLeft img{
+  width: 30px;
+}
+
+/*Footer Left end*/
+
+
+/*Footer Right  start*/
+
+.footerRight{
+  float: right;
+  padding-left: 1%;
+  border-left: 1px solid #666666;
+}
+.footerRight li{
+  color: #666666;
+}
+
+/*Footer Right end*/
+
+
+/*****************************footer end********************************/

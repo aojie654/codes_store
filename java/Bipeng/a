@@ -1,0 +1,4 @@
+HOMEWORK:
+1. Ins a class A with method "methodA" to throw RuntimeException,"methodB" to throw NotRuntimeException
+2. Ins a class B to use two method of class A and try catch of them.
+3. Ins a class C use method of class B and todo with it and not to throw.

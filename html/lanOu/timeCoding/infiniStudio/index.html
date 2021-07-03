@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>InfiniStudio</title>
+  <style media="screen">
+    .wrap {
+      width: 500px;
+      position: relative;
+      /*border: 1px solid #ff0000;*/
+    }
+
+    .wrap:hover .mask {
+      opacity: 0.5;
+    }
+
+    .wrap:hover h4 {
+      opacity: 1;
+    }
+
+    .image img {
+      width: 100%;
+      display: block;
+    }
+
+    .mask {
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      position: absolute;
+      opacity: 0;
+      top: 0px;
+      left: 0px;
+      z-index: 8;
+      transition: 1s;
+    }
+    h4 {
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      color: #ff0000;
+      position: absolute;
+      opacity: 0;
+      top: 30%;
+      left: 0px;
+      z-index: 8;
+      transition: 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="image">
+      <img src="./img/lxz.jpg" alt="lxz">
+    </div>
+    <div class="mask"></div>
+    <h4>可爱的小胖</h4>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>00_固定定位</title>
+  <style media="screen">
+    body {
+      text-align: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: fixed;
+      /*默认情况下定位属性position:
+          确定了一个盒子在改变位置时使用的方式，默认值是static
+          默认文本流：padding,margin在原有文本流中从上到下，从左到右去改变盒子位置
+          pisition:fixed: 固定定位,当其为fixed，是指盒子左边到浏览器窗口左边的距离
+          定位操作：包含left,right,top,bottom,
+        */
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      z-index: 10;
+      /*设置定位盒子在浏览器垂直方向显示的优先级*/
+      /*固定定位特点
+      1.设置了固定定位的盒子脱离了原来的文本流，踏空出的区域会由默认文本流的盒子占据;
+      2.脱离原来文本流盒子不再具有原来文本流中的盒子位置特性(block,不再继承父级宽度，
+        inline块可以支持所有的css样式设置。inline-block不再有间隙问题);
+      3.盒子的宽高由内容撑开，margin相加，支持所有css样式设置;
+      4.固定定位时盒子按照浏览器窗口的四个边进行定位的，top,right,bottom,left;
+      5.应用场景：在浏览器窗口内固定位置不变，不随页面内容滚动而滚动的块。广告，聊天窗口，
+        信息框，弹出框。。。网页的头部，网页底部;
+        */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+
+  </div>
+  <div style="height:1800px; width:1900px;"></div>
+</body>
+
+</html>

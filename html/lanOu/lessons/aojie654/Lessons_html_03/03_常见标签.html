@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>03_常见标签</title>
+  <style media="screen">
+    p {
+      height: 1000px;
+    }
+
+    img {
+      width: 200px;
+      .box {
+        width: 100%;
+      }
+      /*图片标签img：用于图片引入文档
+           通常只设置宽度，高度自适应
+           最好设置宽度百分比*/
+    }
+
+    ul {
+      list-style-type: circle;
+      /*更改无需列表样式*/
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Haha</h1>
+  <!--
+标题标签：h1~h6，表示权重;h1在页面中只能有一个;
+h2：一个页面做多2~3次;
+h3：任意次;
+
+   -->
+
+  <!-- 段落标签p：标签内部只能放文字，不能嵌套其他标签-->
+  <p id="text">段落标签p：标签内部只能放文字，不能嵌套其他标签</p>
+  <!--
+  锚点标签a：实现页面的跳转
+ -->
+  <a href="https:g.cn">跳转到g.cn</a><br />
+  <!-- 跳转到g.cn -->
+  <a href="Ex_StruckH5_01.html">跳转到本地H5结构</a>
+  <a href="#"> 回到顶部</a>
+  <a href="#text"> 传送到p段落</a>
+  <!-- 跳转到本页文档的指定位置 -->
+
+  <div class="box">
+    <img src="./img/tmp2.png" alt="树木">
+  </div>
+  <!-- 加粗 <b></b>  <strong>强调</strong>
+ <i>斜体</i> <em>斜体</em> <u>下划线</u>
+ -->
+
+  <!-- 无序列表
+ <ul>
+   <li></li>
+ </ul>
+默认左侧有40px padding-->
+
+  <!-- ol:有序列表
+<ol>
+  <li></li>
+</ol>
+<pre> 解析所有字符，包括空格，换行，制表符</pre>
+ -->
+
+ <!-- 自定义标签 -->
+ <fi>自定义标签fi</fi>
+ <!-- 引用标签  -->
+ <blockquote cite="http://g.cn">引用自g.cn</blockquote>
+</body>
+
+</html>

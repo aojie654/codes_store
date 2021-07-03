@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{% static 'student/images/icon.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'student/css/login.css' %}">
+    <title>登录</title>
+</head>
+<body>
+<div class="login">
+    <img class="login_image" src="{% static 'student/images/logo.png' %}" alt="">
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="forms">
+            {% csrf_token %}
+            {{ uf.as_p }}
+        </div>
+        <div class="btn">
+            <div>
+                <a href="#">忘记密码?</a>
+                <button type='submit'>登录</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

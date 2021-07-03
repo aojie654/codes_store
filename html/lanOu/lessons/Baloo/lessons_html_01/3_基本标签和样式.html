@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>基本标签和样式</title>
+    <!-- 内部样式表：写在html文档内部的样式表 -->
+    <style>
+    /*标签选择器：标签名{样式}*/
+        div{
+          width:100px;
+          height: 100px;
+          background-color: red;
+        }
+        /*类型选择器：.类型名{样式}
+          相当于给标签起了一个别名，通过别名
+          选中标签设置样式（给标签起名：class="名称"）
+          命名规范：
+          1、不能以数字开头（规则）
+          2、见名知意
+          3、驼峰命名法：
+          如果有多个单词构成一个名称时，从第二个
+          单词开始，首字母大写
+          studentNumber
+         特点:1、不同标签可以拥有相同的类型名
+             2、同一标签可以拥有多个类型名（不同类型名
+                之间用空格隔开
+             ）
+             3、当多个类型选择器设置相同样式时，在样式
+             表中最后位置上的样式生效（样式的叠加效果：
+             代码从上到下依次叠加执行）
+
+        */
+        .gblw{
+          background-color:yellow;
+        }
+        .xw{
+          background-color:green;
+        }
+        /*id选择器： #id名称{样式}
+          id是一个标签的唯一身份标识不允许
+          重复，前端规范要求，不能用 id选择
+          器来给盒子设置样式
+        */
+        #l9527{
+          background-color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 行间样式：写在标签内部的style属性中，
+  只对当前标签有效：重复性的代码称为“代码冗余” -->
+    <!-- <div style="width:100px;height:100px;background-color:red"></div> -->
+    <!-- <div style="width:100px;height:100px;background-color:red"></div> -->
+    <div></div>
+    <div class="gblw"></div>
+    <div class="xw gblw"></div>
+    <div class="xw gblw" id="l9527"></div>
+
+  </body>
+</html>

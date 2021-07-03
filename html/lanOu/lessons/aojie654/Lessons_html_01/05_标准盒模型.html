@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>05_标准盒模型</title>
+    <style media="screen">
+      .box{
+        width: 200px;
+        height: 200px;
+        border: 10px solid black; /*边界属性，线宽，线型，颜色，最好写在分离属性之上*/
+        border-width: 10px;    /*简写属性会有默认属性*/
+        border-style: solid;
+        border-color: black;
+
+        padding: 20px 40px 60px 80px;/*内边距简写属性，即边界到width和height之间的距离。
+                                   值的数量1：四周，2：上下，左右，3：上，左右，下，4：上，右，下，左。
+                                   四边界：top,right,buttom,left;
+                                   可以改变盒子大小，而且外扩*/
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+<div class="box">
+  I'm div;
+</div>
+  </body>
+</html>

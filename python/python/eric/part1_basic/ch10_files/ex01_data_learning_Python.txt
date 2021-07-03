@@ -1,0 +1,3 @@
+In Python you can learn an OOP language.
+In Python you can use the less code to create the greater functions.
+In Python you can play with turtle.

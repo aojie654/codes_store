@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>03_基本标签和样式</title>
+    <style media="screen">
+      pre{
+        background-color: gray;
+      }
+
+      .preClass0{
+        background-color: orange;
+      }
+
+      .preClass1{
+        background-color: red;
+        width: 1000px;
+      }
+
+      #l9527{
+        background-color: blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>内部样式表，写在html中的head标签里;</h1>
+      <h2>行间样式</h2>
+      <h3>Eg.</h3>
+        <pre style="background-color:yellow;">
+              <em>&lt;pre background-color:yellow;"&gt; &lt;/pre&gt;</em>
+              写在标签内部的style属性，只对当前标签有效;
+        </pre>
+      <h2>标签选择器: 类型名{样式}</h2>
+      <h3>Eg.</h3>
+        <pre>
+          <em>
+          pre{
+            background-color: #gray;
+          }
+          </em>
+
+        </pre>
+
+      <h2>类型选择器:.类型名{样式}</h2>
+      <h3>Eg.</h3>
+        <pre class="preClass0">
+          <em>.preClass0{
+            background-color: orange;
+          }
+          </em>
+
+          相当于给标签起别名，通过别名选中标签设置样式(给标签起名:class="名称");
+          命名规范:
+            1.不能以数字开头(规则);
+            2.起名要见名知意;
+            3.驼峰命名法(多个单词中，从第二个单词起首字母大写,eg.:studentNumberOfMyClass);
+        </pre>
+
+        <h3>特点：</h3>
+        <pre class="preClass1 preClass0">
+          <em>
+          .preClass0{
+            background-color: orange;
+          }
+
+          .preClass1{
+            background-color: red;
+          }
+          </em>
+
+            1.不同标签可以拥有相同的类型名;
+            2.统一标签可以拥有多个类型名(不同名之间用空格隔开);
+            3.当多个类型选择器设置相同样式时，在样式表中最后位置上的样式生效(样式叠加效果：代码从上到下依次叠加执行);
+        </pre>
+
+
+
+          <h2>id选择器: #id名称{样式}</h2>
+          <h3>Eg.</h3>
+        <pre id="l9527">
+          <em>
+          #l9527{
+            background-color: #999999;
+          }
+        </em>
+
+          id是一个标签的唯一身份标识不许重复，前端规范要求，不能用id选择器给盒子设置样式;
+        </pre>
+
+
+<!--
+
+
+
+ -->
+
+  </body>
+</html>

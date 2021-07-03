@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>01_浮动布局原理</title>
+  <style media="screen">
+    body {
+      color: #ffffff;
+    }
+
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background: #33bbcc;
+      float: left;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background: #aa22ff;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+浮动是一种布局的手段，主要用来解决盒子的同行排列问题，顾名思义，浮动就是盒子在当前行浮起来，然后再移动;
+浮动只能在水平方向左右移动，浮动块在水平方向的排列顺序只跟文档标签的先后顺序有关
+ -->
+  <div class="box2">这是box2</div>
+  <div class="box1">这是box1</div>
+</body>
+
+</html>

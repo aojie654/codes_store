@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>jQueryStudy</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <form class="reg">
+        <div class="reg_top">
+            <p class="reg_top_title">新用户申请(带
+                <cRed>*</cRed>的为必填项)
+            </p>
+        </div>
+        <div class="reg_left">
+            <div class="reg_int reg_int_username">
+                <label for="userName">用户名：</label>
+                <input type="text" id="userName" class="required" />
+
+            </div>
+            <div class="reg_int reg_int_password">
+                <label for="password">密码：</label>
+                <input type="password" id="password" class="required" />
+
+            </div>
+            <div class="reg_int reg_int_passwordCheck">
+                <label for="passwordCheck">确认密码：</label>
+                <input type="password" id="passwordCheck" class="required" />
+
+            </div>
+            <div class="reg_int reg_int_question">
+                <label for="question">密码提示问题：</label>
+                <input type="text" id="question" class="required" />
+
+            </div>
+            <div class="reg_int reg_int_answer">
+                <label for="answer">问题答案：</label>
+                <input type="text" id="answer" class="required" />
+
+            </div>
+            <div class="reg_int reg_int_email">
+                <label for="email">邮箱：</label>
+                <input type="text" id="email" class="norequired" />
+            </div>
+            <div class="reg_int reg_int_phone">
+                <label for="phone">手机号码：</label>
+                <input type="text" id="phone" class="norequired" />
+            </div>
+        </div>
+        <div class="reg_right reg_int_name">
+            <div class="reg_int">
+                <label for="name">真实姓名：</label>
+                <input type="text" id="name" class="required" />
+
+            </div>
+            <div class="reg_int reg_int_sex">
+                <label for="sex">性别：</label>
+                <input type="radio" name="sex" value="male">男
+                <input type="radio" name="sex" value="female">女
+
+            </div>
+            <div class="reg_int reg_int_province">
+                <label for="province">省市：</label>
+                <select name="palace">
+                <option value="paking">北京</option>
+                <option value="nanjing">南京</option>
+                <option value="tokyo">东京</option>
+                </select>
+            </div>
+            <div class="reg_int reg_int_zipCode">
+                <label for="zipCode">邮政编码：</label>
+                <input type="text" id="zipCode" class="norequired" />
+            </div>
+            <div class="reg_int reg_int_birthdate">
+                <label for="birthdate">出生日期：</label>
+                <input type="text" id="birthdateYear" class="required reg_int_birthdate_year" />
+                <select name="mounth">
+                	<option value="1">1</option>
+                	<option value="2">2</option>
+                	<option value="3">3</option>
+                	<option value="4">4</option>
+                	<option value="5">5</option>
+                	<option value="6">6</option>
+                	<option value="7">7</option>
+                	<option value="8">8</option>
+                	<option value="9">9</option>
+                	<option value="10">10</option>
+                	<option value="11">11</option>
+                	<option value="12">12</option>
+                </select> 
+                <select name="day">
+                	<option value="1">1</option>
+                	<option value="2">2</option>
+                	<option value="3">3</option>
+                	<option value="4">4</option>
+                	<option value="5">5</option>
+                	<option value="6">6</option>
+                	<option value="7">7</option>
+                	<option value="8">8</option>
+                	<option value="9">9</option>
+                	<option value="10">10</option>
+                	<option value="11">11</option>
+                	<option value="12">12</option>
+                	<option value="13">13</option>
+                	<option value="14">14</option>
+                	<option value="15">15</option>
+                	<option value="16">16</option>
+                	<option value="17">17</option>
+                	<option value="18">18</option>
+                	<option value="19">19</option>
+                	<option value="20">20</option>
+                	<option value="21">21</option>
+                	<option value="22">22</option>
+                	<option value="23">23</option>
+                	<option value="24">24</option>
+                	<option value="25">25</option>
+                	<option value="26">26</option>
+                	<option value="27">27</option>
+                	<option value="28">28</option>
+                	<option value="29">29</option>
+                	<option value="30">30</option>
+                	<option value="31">31</option>
+                </select> 
+            </div>
+            <div class="reg_int reg_int_IDnumber">
+                <label for="IDnumber">身份证号码：</label>
+                <input type="text" id="IDnumber" class="norequired" />
+            </div>
+            <div class="reg_int reg_int_contact">
+                <label for="contact">联系电话：</label>
+                <input type="text" id="contact" class="norequired" />
+            </div>
+        </div>
+        <div class="int">
+            <input type="submit" value="提交" id="send" onclick="submitCheck()" />
+            <input type="reset" value="重置" id="res" />
+        </div>
+    </form>
+</body>
+
+</html>

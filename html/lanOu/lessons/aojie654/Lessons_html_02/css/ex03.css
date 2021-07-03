@@ -1,0 +1,36 @@
+.main{
+width: 150px;
+padding:5px;
+background-color: #f4f4f4;
+border:1px solid #b4b4b4;
+}
+
+.main div{
+   padding: 0px 10px;
+   line-height: 1.5;
+}
+
+.choose_m{
+background: url('../img/choose_m.png') left no-repeat;
+}
+
+.choose_s{
+background: url('../img/choose_s.png');
+background-position: left;
+background-repeat: no-repeat;
+}
+
+.more{
+background: url('../img/more.png');
+background-position: right;
+background-repeat: no-repeat;
+}
+
+.line{
+border-bottom:  1px solid #b4b4b4;
+}
+
+.onSlide{
+  background-color: #1c78ff;
+  color: #ffffff;
+}

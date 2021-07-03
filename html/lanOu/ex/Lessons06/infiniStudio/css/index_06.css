@@ -1,0 +1,261 @@
+/*----------------------------------------------------Style Reset Start----------------------------------------------------*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: "Mi Lanting";
+  border: 1px solid transparent;
+}
+
+
+/*----------------------------------------------------Style Reset End----------------------------------------------------*/
+
+
+/*----------------------------------------------------Header Start----------------------------------------------------*/
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.78);
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.header img {
+  width: 110px;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav a {
+  color: #666666;
+  margin: 0px 30px;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+
+/*----------------------------------------------------Header End----------------------------------------------------*/
+
+
+/*----------------------------------------------------Content Start----------------------------------------------------*/
+
+.content {
+  width: 90%;
+  margin: 0px auto;
+  background: #f2f2f2;
+}
+
+.scolling {
+  margin-top: 140px;
+  width: 100%
+}
+
+.scollingContent {
+  ;
+  position: relative;
+  z-index: 8;
+  text-align: center;
+}
+
+.scollingContent img {
+  width: 100%;
+  display: block;
+}
+
+.scollingContent h2 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.pagination {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination span {
+  display: inline-block;
+  margin: 0px 20px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #999999;
+}
+
+.pagination span:hover {
+  border: 1px solid #999999;
+  background: #ffffff;
+}
+
+
+/*Scolling End*/
+
+
+/*About Me Start*/
+
+.aboutMe {
+  padding: 10px 3px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.aboutMe p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "汉仪丫丫体简";
+  color: #999999;
+  text-indent: 2em;
+}
+
+
+/*About ME End*/
+
+
+/*Cooperation Start*/
+
+.cooperation {
+  text-align: center;
+}
+
+.cooperation img {
+  width: 60px;
+  margin: 10px 0.6% 10px 0.6%;
+}
+
+
+/*Cooperation End*/
+
+
+/*Water Flow Start*/
+
+.waterFlow {}
+
+.waterFlow::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cell {
+  float: left;
+  width: 30%;
+  margin: 20px 0px;
+  background: #ffffff;
+  position: relative;
+}
+
+.cellCenter {
+  margin: 20px 3% 20px 3%;
+}
+
+.cellContent {
+  position: relative;
+  z-index: 8;
+  text-align: center;
+}
+
+.cellContent img {
+  width: 100%;
+  display: block;
+}
+
+.cellMask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 1s;
+}
+
+.cellMaskText {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 12;
+  margin: auto;
+  display: inline-table;
+  color: #ffffff;
+}
+
+.cellTitle {
+  text-align: center;
+}
+
+.cellContent:hover .cellMask {
+  opacity: 1;
+}
+
+
+/*----------------------------------------------------Content End----------------------------------------------------*/
+
+
+/*----------------------------------------------------Footer Start----------------------------------------------------*/
+
+.footer {
+  background: #e0e0e0;
+  margin-top: 20px;
+  padding: 10px 0px;
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footerLeft {
+  float: left;
+  width: 49%;
+  text-align: right;
+}
+
+.footerLeft img {
+  width: 30px;
+}
+
+.footerRight {
+  float: right;
+  width: 49%;
+  padding-left: 0.7%;
+  margin-left: 0.7%;
+  border-left: 1px solid #999999;
+}
+
+.footerRight img {
+  width: 130px;
+  display: block;
+}
+
+.footerRight ul {
+  list-style: none;
+}
+
+.info {
+  font-size: 13px;
+  color: #666666;
+}
+
+
+/*----------------------------------------------------Footer End----------------------------------------------------*/

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>06_浮动坍塌</title>
+  <style media="screen">
+    .box{
+      width: 200px;
+      border: 1px solid red;
+    }
+    .box1{
+      width: 100px;
+      height: 100px;
+      background: blue;
+      float: left;
+    }
+    .box2{
+      width: 200px;
+      height: 100px;
+      background: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box1"></div>
+  </div>
+    <div class="box2">
+
+    </div>
+    <!--
+    浮动坍塌：
+        就是当父级中的子级浮动而导致其撑开的那段父级的高度发生丢失。
+        这种由于由于所有子级浮动而导致的父级完全高度丢失现象，我们称为浮动坍塌;
+    浮动坍塌的危害：
+        导致父级所在的文本流区域布局紊乱;
+     -->
+</body>
+
+</html>

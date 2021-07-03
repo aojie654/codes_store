@@ -1,0 +1,33 @@
+.box{
+    width: 375px;
+    background-color: #d4d1c8;
+    border: 2px solid  #ccc9c5;
+    border-right-color:  #707070;
+    border-bottom-color:  #707070;
+    /*颜色设置两种*/
+    font-family: STsong;
+}
+.title{
+  background-image: url('../img/head_bg.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  text-indent: 3px;
+  padding: 2px;
+}
+
+.content{
+  width: 210px;
+  height: 60px;
+  background-image: url('../img/content_bg.png');
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  font-size: 11px;
+  font-weight: lighter;
+  color: #000000;
+  word-break: break-all;
+  padding: 20px 0px 0px 60px;
+  /*两种方法*/
+}

@@ -1,0 +1,252 @@
+/*********************Style Reset  Strat*********************/
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid transparent;
+}
+
+
+/*********************Style Reset  End*********************/
+
+.content {
+  background: #f2f2f2;
+}
+
+
+/*********************Header Strat*********************/
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.78);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.header img {
+  width: 110px;
+}
+
+.header a {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Microsoft YaHei";
+  font-weight: lighter;
+  padding: 0px 40px;
+}
+
+.header a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/********************* Header End*********************/
+
+
+/*********************Content  Strat*********************/
+
+.content {
+  margin: 0px auto;
+  margin-top: 140px;
+  width: 90%;
+}
+
+.scolling {
+  position: relative;
+  z-index: 8;
+  width: 100%;
+  text-align: center;
+}
+
+.scolling img {
+  width: 100%;
+  display: block;
+}
+
+.scolling h2 {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 10;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.pagination {
+  margin: 10px 0px 40px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination span {
+  display: inline-block;
+  margin: 0px 20px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #999999;
+  border: 1px solid transparent;
+}
+
+.pagination span:hover {
+  background: #ffffff;
+  border: 1px solid #999999;
+}
+
+
+/*Scooling End*/
+
+
+/*About Me Start*/
+
+.aboutMe {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: "Microsoft YaHei";
+  margin: 10px;
+  padding: 15px 0px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.aboutMe p {
+  text-align: 20px;
+  text-indent: 2em;
+}
+
+
+/*AboutMe End*/
+
+
+/*Cooperation Logo Start*/
+
+.cooperationLogo {
+  width: 100%;
+  text-align: center;
+}
+
+.cooperationLogo img {
+  width: 60px;
+  margin: 0px 0.67%;
+}
+
+
+/*Cooperation Logo End*/
+
+
+/*WaterFlow Start*/
+
+.waterFlow {
+  width: 100%;
+}
+
+.waterFlow::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cell {
+  float: left;
+  width: 30%;
+  background: #ffffff;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.cellCenter {
+  margin: 15px 4.5%;
+}
+
+.cellContent {
+  position: relative;
+  z-index: 9;
+}
+
+.cellContent img {
+  width: 100%;
+  /*position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;*/
+  display: block;
+}
+
+.cellMask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 1s;
+}
+
+.cellMaskText {
+  display: inline-table;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 12;
+  margin: auto;
+  color: #ffffff;
+}
+.cellContent:hover .cellMask{
+  opacity: 1;
+}
+
+
+/*WaterFlow End*/
+
+
+/*********************Content  End*********************/
+
+
+/*********************Footer  Strat*********************/
+.footer{
+  background: #e0e0e0;
+  padding: 10px 0px;
+}
+.footer::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.footerLeft, .footerRight{
+  float: left;
+  width: 49%;
+  /*height: 100%;*/
+}
+.footerLeft{
+  text-align: right;
+}
+.footerLeft img{
+  width: 30px;
+}
+.footerRight{
+  float: right;
+  margin-left: %0.8;
+  border-left: 1px solid #999999;
+  padding-left: 1%;
+}
+.footerRight img{
+  width: 120px;
+}
+.info{
+  line-height: 22px;
+  font-size: 14px;
+  font-family: "Mi Lanting";
+  color: #666666;
+}
+/*********************Footer  End*********************/

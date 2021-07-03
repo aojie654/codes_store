@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>05_hover2</title>
+  <style media="screen">
+    .box {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #ff0000;
+      margin: auto;
+    }
+
+    .box1 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #008000;
+      margin: auto;
+      position: relative;
+      left: 400px;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #0000ff;
+      margin: auto;
+      position: relative;
+      right: 400px;
+    }
+    .box:hover .box1{
+      background: #008000;
+    }
+    .box:hover .box2{
+      background: #151515;
+      /*父级选择器:hover 子级选择器{样式}
+
+      鼠标移入父级结构范围内，让子级样式发生改变
+      鼠标移入子级结构范围内也会触发父级的hover效果，并且会覆盖子级本身hover效果，同级兄弟盒子不能互相指定hover效果;
+         如果希望实现鼠标移入盒子A让盒子B样式发生变化，必须让AB盒子建立联系(A要做为B的父级)
+      */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    Im ur father;
+    <div class="box1">Im son of 1</div>
+    <div class="box2">Im son of 2</div>
+  </div>
+</body>
+
+</html>

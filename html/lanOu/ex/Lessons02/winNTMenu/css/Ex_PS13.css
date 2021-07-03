@@ -1,0 +1,29 @@
+.mainout {
+  width: 376px;
+  border: 1px solid #d4d0c8;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+}
+
+.main {
+  background:  #e6e6e6 url('../img/head_bg.png') 0px 0px no-repeat;
+  font-size: 12px;
+  font-family: STsong;
+  border: 1px solid #ffffff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+}
+
+.head {
+  height: 18px;
+  background: url("img/head_bg.png") 0 0 no-repeat;
+  font-weight: bold;
+  color: #ffffff;
+  text-indent: 3px;
+}
+
+.content {
+  width: 221px;
+  margin-left: 70px;
+  padding: 15px 0px;
+}

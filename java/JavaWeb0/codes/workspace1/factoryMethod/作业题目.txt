@@ -1,0 +1,15 @@
+//使用简单工厂模式或抽象工厂模式。1 生产蛋糕/球鞋
+// 2 黑森林，草莓蛋糕，芝士蛋糕/跑鞋，篮球鞋，网球鞋，登山靴
+// 3 蛋糕接口 （）  蛋糕店（蛋糕工厂生产不同种类蛋糕），
+     // 球鞋接口。鞋厂类生产不同种类球鞋
+// 4 在测试类中，使用工厂方法或抽象工厂模式生产不同种类蛋糕或跑鞋
+
+interface Cake
+class cheeseCake
+class blackforestCake
+bakerFactory cook("cheeseCake");生成各种蛋糕！ 
+cookCheeseCake();//静态工厂方法。
+cookBlackForestCake(); 
+
+interface CakeMaker : cook();
+bakerFactory implements CakeMaker 

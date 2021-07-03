@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>06_标准盒模型_margin</title>
+    <style media="screen">
+      .box00{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border:10px solid green;
+        margin:50px; /*同级标签(div)之间的margin会重叠，且取最大值
+                       同级标签的margin按照从上到下，从左到右的顺序改变盒子位置*/
+      }
+      .box01{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        border:10px solid black;
+        margin:50px;
+      }
+    </style>
+  </head>
+  <body>
+<div class="box00">
+  I'm div;
+</div>
+<div class="box01">
+I'm div;
+</div>
+  <body>
+
+  </body>
+</html>

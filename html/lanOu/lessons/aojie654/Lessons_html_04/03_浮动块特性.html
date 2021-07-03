@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>03_浮动块特性</title>
+    <style media="screen">
+    .box{
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+      float: left;
+      margin: 50px 50px;
+      display: inline;
+    }
+    </style>
+    <!-- 浮动特性：
+    1.脱离原来的文本流，进入新的一层，不再拥有原来的文本流盒子特性(block inline inline-block);
+    2.支持所有的CSS样式设置;
+    3.符哦对嗯块之间的margin相加;
+    4.浮动块在不设置宽高时，大小由内容撑开;
+    5.浮动块的宽度设置为百分比时，宽度是按照文档结构中的直接父级宽度变化的;
+
+   -->
+  </head>
+  <body>
+  <div class="box"></div>
+  <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>10_clear三行代码</title>
+  <style media="screen">
+    .box {
+      width: 200px;
+      border: 1px solid red;
+    }
+    .box1{
+      width: 100px;
+      height: 100px;
+      background: blue;
+      float: left;
+    }
+    .box::after{
+      content:"";
+      display: block;
+      clear:both;
+    }
+    /*谁的高度由于子级高度丢失就给谁在样式中设置after伪元素：
+    {
+      content:"";
+      display: block;
+      clear:both;
+    }
+    优点：渲染速度加快且结构简单;
+    缺点：增加代码冗余;
+    */
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box1"></div>
+  </div>
+</body>
+
+</html>

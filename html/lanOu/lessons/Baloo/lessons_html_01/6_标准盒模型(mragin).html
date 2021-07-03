@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 50px;
+      }
+      .box1{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 同级标签（div）会重叠，取最大：
+      同级标签的margin按照从上到下，从左
+      向右的方式改变盒子的位置
+   -->
+    <div class="box"></div>
+    <div class="box1"></div>
+  </body>
+</html>

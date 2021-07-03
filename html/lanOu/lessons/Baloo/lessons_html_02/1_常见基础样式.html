@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        /*背景图属性*/
+        background-image: url('img/1.png');
+        /*背景图平铺*/
+        background-repeat: no-repeat;
+        /*背景图定位属性*/
+        background-position: center center;
+        /*简写属性:背景色  背景图 背景图定位  平铺
+          简写属性可以设置任何一个分立的属性，没有设置值
+          的属性，都会被设置成默认值
+          例如：background:red; 一样可以设置背景色为红色
+          同时将背景图置为空，定位置为左上角，平铺
+        */
+        background:red url('img/1.png') center center no-repeat;
+        /*字体相关样式*/
+        /*
+        字体颜色 0-255
+
+        */
+        color: rgb(255,0,0);
+        color: #0000ff;
+        /*字体大小:浏览器默认字体大小16px*/
+        font-size:50px;
+        /*字体的样式*/
+        /*font-style:oblique;*/
+        /*字体行高*/
+        /*line-height:500px;*/
+        /*字体下划线*/
+        text-decoration: underline;
+        /*加粗*/
+        font-weight: 500;
+        /*字体类型:monospace：字母等间距*/
+        font-family:"STkaiti";
+        /*字体水平方向排布*/
+        text-align: left;
+        /*文本缩进*/
+        text-indent: 2em;
+        /*字符间距*/
+        /*letter-spacing:40px;*/
+        /*词间距（英文单词之间的距离）*/
+        word-spacing: 50px;
+        /*自动换行*/
+        word-wrap: break-word;
+        /*强制不换行*/
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+
+  </body>
+</html>

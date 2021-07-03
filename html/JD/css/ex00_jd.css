@@ -1,0 +1,673 @@
+/* =============BUFF加成开始============ */
+
+
+/*
+ ┏┓　 ┏┓
+┏┛┻━━━┛┻┓
+┃　　　　      ┃ 　
+┃   ━   ━ ┃
+┃ ┳┛　┗┳   ┃
+┃　　　　　 ┃
+┃　　┻　　　┃
+┃　　　　　 ┃
+┗━┓　　　┏━┛
+　┃　　　┃　　　　　　　　　
+　┃　　　┃
+　┃　　　┗━━━┓
+　┃　　　　  ┣┓
+　┃　　　 　┏┛
+　┗┓ ┓┏━┳┓┏┛
+神兽保佑无BUG
+有BUG也不影响运行~~~
+*/
+
+
+/* =============BUFF加成结束============ */
+
+
+/* =============文档信息开始============ */
+/* 
+Update: 2017.11.17 12:41
+============
+1.添加脚部上边框
+2.规范Html内类名
+============
+Update: 2017.11.08 12:20
+============
+1.给wrap宽度解决缩放排序问题
+2.调整搜索栏搜索按钮行高解决Firefox下1px白色间隙问题
+============
+Author: aojie654
+E-Mail: aojie654@live.cn
+        aojie815@gmail.com
+
+终于他娘的写完了(╯°□°)╯︵ ┻━┻
+
+Begain: 2017.11.01 15:00
+End:    2017.11.05 19:05 */
+
+
+/* =============文档信息结束============ */
+
+* {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: Microsoft YaHei;
+}
+
+
+/* 网页初始化 */
+
+
+/* =======================框架开始============================== */
+
+.wrap {
+    width: 1347px;
+}
+
+
+/* =======================网页头部============================== */
+
+.content_head {
+    background: rgba(230, 230, 230, 1);
+    font-size: 12px;
+    padding: 4px;
+}
+
+.content_head_right_li:hover {
+    color: rgba(255, 0, 0, 1);
+}
+
+.content_head::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.content_head_left {
+    float: left;
+    margin-left: 10px;
+}
+
+
+/* 左半部地址之类 */
+
+.content_head_right {
+    float: right;
+    margin-right: 2px;
+}
+
+.content_head_right_li {
+    padding-right: 5px;
+    margin: 0px 2px;
+    border-right: 1px solid rgba(170, 170, 170, 1);
+}
+
+
+/* ========================头部结束======================= */
+
+
+/* ========================网页身体======================= */
+
+
+/* ======内容顶部搜索栏================= */
+
+.content_body_top_ad {
+    font-size: 0px;
+}
+
+.content_body_top_ad_img {
+    width: 100%;
+}
+
+
+/* 顶部广告栏 */
+
+.content_body_search {
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+
+/* 搜索栏，包括右侧购物车 */
+
+.content_body_search::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content_body_search_logo {
+    float: left;
+    margin-top: 4px;
+}
+
+.content_body_search_bar {
+    float: left;
+    margin: 0px 100px;
+}
+
+.content_body_search_bar_up {
+    border: 3px solid rgba(180, 0, 0, 1);
+    width: 550px;
+    margin-top: 10px;
+}
+
+.content_body_search_bar_up::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.content_body_search_bar_up_content_input {
+    font-size: 13px;
+    float: left;
+    margin: 9px;
+}
+
+.content_body_search_bar_up_content_botton {
+    background: rgba(180, 0, 0, 1);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    float: right;
+    width: 70px;
+    line-height: 36px;
+}
+
+.content_body_search_bar_down_ul {
+    padding: 0px 13px;
+}
+
+.content_body_search_bar_down_li {
+    display: inline;
+    text-align: center;
+    font-size: 10px;
+    padding-right: 5px;
+}
+
+.content_body_search_bar_down_cart {
+    float: left;
+    line-height: 30px;
+    border: 1px solid rgba(170, 170, 170, 1);
+    font-size: 12px;
+    width: 90px;
+    background: rgba(240, 240, 240, 1);
+    background-image: url(../img/tel.png);
+    background-repeat: no-repeat;
+    background-position: 5px -50px;
+    padding-left: 30px;
+    margin-top: 17px;
+    margin-left: 50px;
+}
+
+.content_body_search_bar_down_cart_num {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(230, 0, 0, 1);
+    padding: 0px 4px;
+    border-radius: 50%;
+}
+
+
+/* ============内容中部================== */
+
+.content_body_center {
+    z-index: 10;
+    position: relative;
+}
+
+
+/* 网页中间导航栏为上半部分，包括右侧广告，其他为下半部分 */
+
+.content_body_center_nav {
+    border-bottom: 2px solid rgba(180, 0, 0, 1);
+    padding: 0px 40px;
+}
+
+.content_body_center_nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content_body_center_nav_left {
+    font-size: 18px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 250px;
+}
+
+.content_body_center_nav_right {
+    float: left;
+    margin-left: 50px;
+}
+
+
+/* 导航栏右侧即为广告 */
+
+.content_body_center_nav_left_li {
+    display: inline;
+    margin: 15px;
+}
+
+
+/* 中部主菜单 */
+
+.content_body_center_menu {
+    z-index: 10;
+    position: relative;
+    left: 0;
+    top: 0px;
+    width: 230px;
+}
+
+.content_body_center_menu_ul {
+    width: 250px;
+    position: relative;
+    z-index: 11;
+    left: 20px;
+    bottom: 50px;
+    background: rgba(180, 0, 0, 1);
+    padding: 10px 10px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+}
+
+.content_body_center_menu_li {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.content_body_center_menu_li img {
+    height: 25px;
+    width: 25px;
+    float: right;
+}
+
+.content_body_center_menu_li_top {
+    margin-top: 15px;
+}
+
+
+/* 中部菜单之右 */
+
+.content_body_center_content_left {
+    position: absolute;
+    z-index: 12;
+    left: 300px;
+    bottom: 10px;
+    width: 730px;
+}
+
+
+/* 轮播图 */
+
+.content_body_center_content_left_scolling_img {
+    z-index: 13;
+}
+
+.splunk_usbchanges_report{
+    border: 1px transparent #000;
+    position: relative;
+    left: 150px;
+    top: 200px;
+}
+
+
+/* 分页器 */
+
+.content_body_center_content_left_scolling_pagination {
+    position: relative;
+    z-index: 14;
+    bottom: 35px;
+    text-align: center;
+}
+
+.content_body_center_content_left_scolling_pagination span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(80, 80, 80, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.content_body_center_content_left_scolling_pagination span:hover {
+    background: rgba(180, 180, 180, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.content_body_center_content_right {
+    position: absolute;
+    z-index: 12;
+    bottom: 43px;
+    left: 1060px;
+    width: 250px;
+    height: 515px;
+}
+
+
+/* 右侧顶端京东新闻 */
+
+.content_body_center_content_right_JDNews {
+    width: 100%;
+    position: absolute;
+    z-index: 12;
+    left: 0px;
+    top: 65px;
+    border: 1px solid rgba(180, 180, 180, 1);
+    background: rgba(250, 250, 250, 1);
+    padding: 2px 0px;
+}
+
+.content_body_center_content_right_JDNews_head {
+    z-index: 13;
+}
+
+.content_body_center_content_right_JDNews_title {
+    border-bottom: 1px solid rgba(180, 180, 180, 1);
+    padding: 5px 10px;
+}
+
+.content_body_center_content_right_JDNews_title_more {
+    float: right;
+    margin-right: 5px;
+}
+
+.content_body_center_content_right_JDNews_content_ul {
+    font-size: 13px;
+}
+
+.content_body_center_content_right_JDNews_content_li {
+    padding: 3px 10px;
+}
+
+
+/* 右侧中部京东服务*/
+
+.content_body_center_content_right_JDServices {
+    position: absolute;
+    z-index: 13;
+    top: 220px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.content_body_center_content_right_JDServices_line {
+    width: 80px;
+    width: 100%;
+}
+
+.content_body_center_content_right_JDServices_service {
+    float: left;
+    height: 65px;
+    width: 60px;
+    border: 1px solid rgba(180, 180, 180, 1);
+    position: relative;
+    z-index: 13;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+
+/* 使用精灵图插入背景图 */
+
+.content_body_center_content_right_JDServices_service_img {
+    width: 25px;
+    height: 25px;
+    margin: 18px;
+    background-image: url(../img/fly.png);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+}
+
+.content_body_center_content_right_JDServices_service_img11 {
+    background-position-y: 0px;
+}
+
+.content_body_center_content_right_JDServices_service_img12 {
+    background-position-y: -25px;
+}
+
+.content_body_center_content_right_JDServices_service_img13 {
+    background-position-y: -50px;
+}
+
+.content_body_center_content_right_JDServices_service_img14 {
+    background-position-y: -75px;
+}
+
+.content_body_center_content_right_JDServices_service_img21 {
+    background-position-y: -100px;
+}
+
+.content_body_center_content_right_JDServices_service_img22 {
+    background-position-y: -125px;
+}
+
+.content_body_center_content_right_JDServices_service_img23 {
+    background-position-y: -150px;
+}
+
+.content_body_center_content_right_JDServices_service_img24 {
+    background-position-y: -175px;
+}
+
+.content_body_center_content_right_JDServices_service_img31 {
+    background-position-y: -200px;
+}
+
+.content_body_center_content_right_JDServices_service_img32 {
+    background-position-y: -225px;
+}
+
+.content_body_center_content_right_JDServices_service_img33 {
+    background-position-y: -250px;
+}
+
+.content_body_center_content_right_JDServices_service_img34 {
+    background-position-y: -273px;
+}
+
+.content_body_center_content_right_JDServices_service_text {
+    width: 100%;
+    position: absolute;
+    z-index: 13;
+    bottom: 0px;
+    font-size: 12px;
+    left: auto;
+    right: auto;
+    text-align: center;
+}
+
+.content_body_center_content_right_ad {
+    position: absolute;
+    z-index: 13;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+/* ===========内容底部广告位============== */
+
+.content_bottom {
+    font-size: 0px;
+    text-align: center;
+}
+
+.content_bottom_ad {
+    text-align: center;
+    margin: 0px 5%;
+}
+
+.content_bottom_ad::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.content_bottom_ad_toddy {
+    width: 18%;
+    float: left;
+}
+
+.content_bottom_ad_toddy img {
+    width: 100%;
+}
+
+.content_bottom_ad_ad4 {
+    width: 82%;
+    float: left;
+}
+
+.content_bottom_ad_ad4 img {
+    width: 25%;
+}
+
+.content_bottom_char img {
+    width: 22.5%;
+}
+
+
+/* ======底部导航栏========== */
+
+.content_bottom_nav {
+    padding: 10px 4%;
+}
+
+.content_bottom_nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content_bottom_nav_left {
+    float: left;
+    width: 81%;
+    padding-top: 10px;
+}
+
+.content_bottom_nav_left_ul {
+    display: inline-block;
+    width: 19%;
+    font-size: 18px;
+}
+
+.content_bottom_nav_left_li {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.content_bottom_nav_right {
+    float: right;
+    width: 220px;
+    height: 100px;
+    padding: 32px 0px;
+    background-image: url(../img/china.png);
+    background-repeat: no-repeat;
+    background-position: 0px -135px;
+}
+
+.content_bottom_nav_right p {
+    font-size: 13px;
+}
+
+.content_bottom_nav_right_more {
+    text-align: right;
+    padding-right: 15px;
+}
+
+
+/* =========================身体结束====================== */
+
+
+/* ========================网页脚部======================= */
+
+.content_footer {
+    border-top: 1px solid rgba(180, 180, 180, 1);
+    padding: 15px;
+    margin: 0px 25px;
+}
+
+.content_footer_nav {
+    height: 35px;
+}
+
+.content_footer_nav_ul {
+    text-align: center;
+}
+
+.content_footer_website_info {
+    margin-bottom: 10px;
+}
+
+.content_footer_website_info_ul {
+    text-align: center;
+}
+
+.content_footer_website_info_li,
+.content_footer_nav_li {
+    display: inline;
+    font-size: 10px;
+    padding-right: 5px;
+    border-right: 1px solid rgba(130, 130, 130, 1);
+}
+
+.content_footer_nav_li {
+    font-size: 14px;
+    padding-right: 10px;
+    margin-left: 7px;
+}
+
+.content_footer_website_info_li_police img {
+    height: 14px;
+}
+
+.content_footer_appDownload {
+    text-align: center;
+}
+
+.content_footer_appDownload img {
+    margin: 0px 5px;
+}
+
+
+/* ========================脚部结束======================= */
+
+
+/* =================框架结束============================== */
+
+
+/* ===================特殊样式====================== */
+
+.no_border_line {
+    border: none;
+}
+
+.inline {
+    display: inline;
+    text-align: center;
+}
+
+.font_gray {
+    color: rgba(80, 80, 80, 1);
+}
+
+.font_red {
+    color: rgba(230, 0, 0, 1);
+}
+
+
+/* ====================特殊结束====================== */

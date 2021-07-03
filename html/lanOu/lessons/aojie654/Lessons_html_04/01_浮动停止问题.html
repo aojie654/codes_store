@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>02_浮动停止问题</title>
+  <style media="screen">
+    div {
+      border: 1px solid transparent;
+    }
+
+    .box {
+      width: 600px;
+      /*height: 404px;*/
+      margin: auto auto;
+    }
+
+    .box div {
+      float: left;
+      border-radius: 10px;
+    }
+
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background: red;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background: green;
+    }
+
+    .box3 {
+      width: 200px;
+      height: 200px;
+      background: blue;
+    }
+
+    .box4 {
+      width: 200px;
+      height: 200px;
+      background: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+      <div class="box3" style="border-radius:100px"></div>
+    <!-- 浮动换行：
+    当一行没有足够的空间存放所有的浮动块时，多余的浮动块会自动挤到下一行，
+    然后再按照设定的方向继续移动，直到遇到父级框的边缘或者其他浮动块的边缘停止;
+   -->
+  </div>
+</body>
+
+</html>

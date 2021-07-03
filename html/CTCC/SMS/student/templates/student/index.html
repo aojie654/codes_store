@@ -1,0 +1,27 @@
+{% extends 'student/base.html' %}
+{% load static %}
+
+{% block csstyle %}
+    <link rel="stylesheet" type="text/css" href="{% static 'student/css/index.css' %}">
+{% endblock %}
+{% block search %}
+{% endblock %}
+
+{% block welcome %}
+    <div class="welcome">欢迎登陆,
+        <div class="welcome_name">{{ name }}</div>
+        同学
+    </div>
+{% endblock %}
+
+{% block notifications %}
+    <div class="no_wrap">
+        <div class="name">{{n_get.name}}</div>
+        <div class="type_ti">类型:</div>
+        <div class="type">{{ n_get.context_type }}</div>
+        <div class="no_ti">{{ n_get.context_type }}序号:</div>
+        <div class="no">{{ n_get.no }}</div>
+        <div class="time">{{ n_get.related_time }}</div>
+        <div class="content">{{ n_get.content }}</div>
+    </div>
+{% endblock %}

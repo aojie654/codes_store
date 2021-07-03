@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jqueryDmeo03</title>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("li:first").css("color","red")
+				$("li:last").css("color","brown")
+				$("li:even").css("background","blue")
+				$("li:odd").css("background","chartreuse")
+				$("li:eq(0)").css("color","gold")
+				$("li:gt(1)").css("color","fuchsia")
+				$("li:lt(1)").css("color","black")
+				$("p:visible").hide();
+			})
+			
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>西安交通大学</li>
+			<li>城市学院</li>
+			<li>计算机学院</li>
+			<li>网站实训</li>
+		</ul>
+		
+		<p style="display: block;">pjquery</p>
+	</body>
+</html>

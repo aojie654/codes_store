@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>03_相对定位relative</title>
+  <style media="screen">
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 0px auto;
+      transition: 2s;
+      opacity: 0;
+    }
+    .box:hover{
+      opacity: 1;
+    }
+
+    .box1 {
+      background: #ff0000;
+      position: relative;
+      left: 0px;
+      top: 0px;
+    }
+
+    .box2 {
+      background: #008000;
+      position: relative;
+      left: 105px;
+      top: -100px;
+    }
+
+    .box3 {
+      background: #ffff00;
+      position: relative;
+      left: 0px;
+      top: -95px;
+    }
+
+    .box4 {
+      background: #0000ff;
+      position: relative;
+      left: 105px;
+      top: -195px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+</body>
+<!-- 相对定位:position:relative
+    1.盒子将按照子级的原来在文本流中的位置进行定位操作。盒子将比默认文本流高。
+      并且在定位后，盒子在原来文本流的位置不能被其他盒子占据，因此相对定位对原来文本流的影响最小;
+    2.应用场景：
+      1).作为绝对定位盒子的定位父级的位置属性(用来设定定位父级)
+      2).局部位置微调使用relative最方便
+ -->
+
+</html>

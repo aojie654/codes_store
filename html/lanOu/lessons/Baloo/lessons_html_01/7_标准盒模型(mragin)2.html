@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        padding: 20px;
+        border: 10px solid green;
+      }
+      .box1{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin-left: 50px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="box">
+      <div class="box1"></div>
+    </div>
+    <!--
+      盒子嵌套时，当父级盒子没有明确的
+      边界时（没有 border padding ），
+      子级的margin-top传递给父级。导致
+      父级盒子和子级盒子一起在垂直方向上
+      向下移动。
+      解决办法：给父级盒子一个明确边界（border
+      padding）
+      2、子级设置的margin是相对于父级的内容
+      边界发生位置变化。与父级的border无关
+
+    盒模型：
+    标签皆盒子，任何一个标签都是一个矩形盒子
+    矩形盒子的构成：
+           内容区域： width height
+           内边距： padding
+           边界  ： border
+           外边距: margin
+    一个盒子实际渲染大小：
+       宽度 = width  + 左右padding  + 左右border
+       高度 = height + 上下padding  + 上下border
+
+
+
+
+   -->
+
+  </body>
+</html>

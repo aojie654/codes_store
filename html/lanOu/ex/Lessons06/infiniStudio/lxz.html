@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        padding: 0;
+        /*bottom: 0;*/
+        list-style: none;
+        text-decoration: none;
+        border: 1px solid transparent;
+      }
+      body{
+        background: rgb(242, 242, 242);
+      }
+
+
+      .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        /*bottom: 0;*/
+        width: 100%;
+        background:rgba(0, 0, 0, 0.7);
+        z-index: 100;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .nav{
+        width: 100%;
+      }
+      .nav a{
+        color: gray;
+        margin-top: 10px;
+        margin: 20px;
+      }
+      .nav a:hover{
+        color: white;
+      }
+
+      .content{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 170px;
+      }
+      .box{
+        position: relative;
+      }
+      .box img{
+        width: 100%;
+        display: block;
+      }
+      .box h2{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .page{
+        text-align: center;
+        padding: 10px 0;
+      }
+      span{
+        width: 7px;
+        height: 7px;
+        border-radius: 100%;
+        display: inline-block;
+        background: gray;
+        margin: 20px;
+      }
+      span:hover{
+        background: white;
+        border: 1px solid gray;
+      }
+
+      .aboutMe{
+        padding: 10px 0;
+        color: rgb(148,148, 148);
+        line-height: 30px;
+        text-indent: 40px;
+        border-top: 1px solid rgb(148, 148, 148);
+        border-bottom: 1px solid rgb(148, 148, 148);
+      }
+
+      .cooperationLogo{
+        padding: 10px 0;
+        text-align: center;
+      }
+      .cooperationLogo img{
+        width: 30px;
+        margin: 5px;
+      }
+
+      .flowImg:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .cell{
+        width: 30%;
+        float: left;
+        margin: 30px 0;
+        background: white;
+      }
+      .center{
+        margin: 30px 4.7%;
+      }
+      .box1{
+        position: relative;
+      }
+      .mask{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+      }
+      .maskzi{
+        color: white;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+      .box1:hover .mask{
+        opacity: 1;
+      }
+      .title{
+        text-align: center;
+        padding: 5px 0;
+      }
+
+      .footer::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .footer{
+        background: rgb(224, 224, 224);
+
+      }
+      .left{
+        float: left;
+        width: 49%;
+        text-align: right;
+        padding-top: 10px;
+      }
+      .right{
+        float: left;
+        width: 49%;
+        border-left: 1px solid rgb(148,148,148);
+        padding-top: 10px;
+      }
+      .left img{
+        width: 40px;
+      }
+      .right img{
+        width: 170px;
+      }
+      .info{
+        color: rgb(148,148,148);
+        font-size: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/logo.png" alt="">
+      <div class="nav">
+        <a href="#">HOME</a>
+        <a href="#">WORKS</a>
+        <a href="#">CONTACT</a>
+        <a href="#">JION US</a>
+      </div>
+    </div>
+
+
+    <div class="content">
+      <div class="scrollImg">
+        <div class="box">
+          <img src="img/img.jpg" alt="">
+          <h2>今日头条</h2>
+        </div>
+        <div class="page">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <p class="aboutMe">
+        Infini Studio (映纷创意)是一家创意工作室，专注于品质型动画影像的创意与设计。
+        我们使用设计、绘画、动画、特效及多种创新形式，以动态视觉语言对品牌与内容进行创意呈现。
+        并由动画导演、设计师、插画师、三维艺术家等共同协作完成.
+      </p>
+      <div class="cooperationLogo">
+             <img src="img/1.jpg" alt="">
+             <img src="img/2.jpg" alt="">
+             <img src="img/3.jpg" alt="">
+             <img src="img/4.jpg" alt="">
+              <img src="img/5.jpg" alt="">
+              <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+                <img src="img/10.jpg" alt="">
+                <img src="img/11.jpg" alt="">
+                <img src="img/12.jpg" alt="">
+                <img src="img/13.jpg" alt="">
+                <img src="img/14.jpg" alt="">
+
+      </div>
+
+      <div class="flowImg">
+
+        <div class="cell">
+          <div class="box1">
+            <img src="img/1-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+        <div class="cell center">
+          <div class="box1">
+            <img src="img/2-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+        <div class="cell">
+          <div class="box1">
+            <img src="img/3-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+
+        <div class="cell">
+          <div class="box1">
+            <img src="img/4-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+        <div class="cell center">
+          <div class="box1">
+            <img src="img/5-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+        <div class="cell">
+          <div class="box1">
+            <img src="img/6-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+        <div class="cell">
+          <div class="box1">
+            <img src="img/7-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+        <div class="cell center">
+          <div class="box1">
+            <img src="img/8-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+        <div class="cell">
+          <div class="box1">
+            <img src="img/9-1.jpg" alt="">
+            <div class="mask">
+              <div class="maskzi">
+                <h3>今日头条</h3>
+                <p>你关注的头条</p>
+              </div>
+            </div>
+          </div>
+          <div class="title">今日头条</div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="left">
+        <img src="img/1.jpg" alt="">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="right">
+        <img src="img/footer_logo.jpg" alt="">
+        <ul class="info">
+          <li>Infini Studio | 映纷创意</li>
+          <li>weibo : @InfiniStudio</li>
+          <li>北京市朝阳区常营未来时大厦706</li>
+          <li>TEL : 010-85394331QQ : 7585917</li>
+          <li>QQ : 7585917</li>
+          <li>Email : infinistudio@foxmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

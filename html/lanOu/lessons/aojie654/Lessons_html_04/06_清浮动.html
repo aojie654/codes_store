@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>06_清浮动</title>
+  <style media="screen">
+    .box {
+      width: 200px;
+      border: 1px solid red;
+      /*float: left;*/
+      /*BFC:Block-Fromatting-Content*/
+      /*overflow: hidden;*/
+      display: inline-block;
+    }
+
+    .box1 {
+      height: 100px;
+      width: 100px;
+      background: green;
+      float: left;
+    }
+
+    .box2 {
+      height: 200px;
+      width: 200px;
+      background: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box1"></div>
+  </div>
+  <div class="box2">
+      <!--
+      清浮动方式：(不推荐)
+      1.给父级设置固定高度：不灵活
+      2.给父级设置overflow:hidden格式化上下文
+        优点：代码简单
+        缺点：消耗资源
+      3.给父级设置display:inline-block:会增加inline-block的固有问题，
+        如间隙问题，对齐问题，宽度继承问题;
+      4.给父级设置float，不推荐，除非父级浮动对父级所在文本流没有影响;
+     -->
+
+  </div>
+</body>
+
+</html>
